@@ -1,0 +1,61 @@
+:root {
+  --card-padding: 20px;
+  --border-radius-card: 5px;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(188, 199, 226);
+}
+.all-content {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 5fr;
+}
+.side-bar {
+  grid-column: 1/2;
+  grid-row: 1/4;
+
+  background-color: rgb(12, 114, 192);
+}
+.header {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.profile-1 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.header-buttons {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.main-content {
+  grid-column: 2/4;
+  grid-row: 2/4;
+  display: grid;
+
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.your-proyects {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  display: grid;
+  grid-template-rows: 5%;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin: 20px;
+}
+.your-proyects .title {
+  grid-column: 1/3;
+}
+.card {
+  background-color: rgb(255, 255, 255);
+  padding: var(--card-padding);
+  border-radius: var(--border-radius-card);
+}
